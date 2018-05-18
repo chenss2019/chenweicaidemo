@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>知识点引入</title>
+		<style type="text/css">
+			h1{
+				/*text-align: center;*/
+				color: red;
+			}
+			h3{
+				/*text-align: center;*/
+				color: blue;
+			}
+			p{
+				/*text-align: center;*/
+				font-size: 20px;
+				font-family: "宋体";
+			}
+			
+			/*给整首诗加个边框*/
+			div{
+				border-style: solid;
+				border-width: 1px;
+				border-color: red;
+				
+				/*水平居中：*/
+				/*设置宽度,导致内容的参照物从body转移成div
+				   从而不再相对于窗口居中，而只相对于当前的div居中
+				   解决办法：外边距margin 0 auto，简单介绍一下外边距*/
+				width:300px;
+				/*内容居中*/
+				text-align: center;
+				/*使用外边距可以让框体居中*/
+				margin: 0 auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>静夜思</h1>
+			<h3>李白</h3>
+			<p>
+				床前明月光<br />
+				疑是地上霜<br />
+				举头望明月<br />
+				低头思故乡<br />
+			</p>
+		</div>
+	</body>
+</html>

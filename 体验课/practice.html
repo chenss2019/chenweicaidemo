@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图片说明</title>
+		<style type="text/css">
+			.image{
+				width: 230px;
+				height: 142px;
+				background-image: url(img/pic1.jpg);
+				background-size: 230px 142px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -100px;
+				margin-top: -62px;
+			}
+			.image section{
+				position: absolute;   /*如果父元素已定位,则相对与父元素*/
+				left: 0px;     /*0代表没有距离，即顶着父元素的左部*/
+				bottom: 0px;      /*顶着父元素的下部*/
+				padding: 3px;  /*让字体不要贴着边框,不美观*/
+				text-indent: 2em;  /*em是弹性大小,一般继承于字体大小*/
+				background-color: black;
+				color: white;
+				cursor: pointer;   /*让鼠标的形状编程"手"*/
+				filter: alpha(opacity=0);
+				opacity: 0;    /*这两句都是设置透明度*/
+				transition: all 1s ease;   /*添加过渡动画效果*/
+			}
+			/*鼠标浮动效果，:hover在css选择器中属于伪类选择器*/
+			.image section:hover{
+				filter: alpha(opacity=50);
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="image">
+			<section>
+				一个静静沉思的女孩，蜷缩在房中的角落里
+			</section>
+		</div>
+	</body>
+</html>
